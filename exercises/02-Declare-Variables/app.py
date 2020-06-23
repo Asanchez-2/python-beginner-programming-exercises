@@ -1,1 +1,2 @@
-# your code here
+mycolor = "Yellow"
+print(mycolor)
