@@ -1,4 +1,5 @@
 import random
+from random import randint
 
 def get_color(color_number=4):
     # making sure is a number and not a string
@@ -15,10 +16,19 @@ def get_color(color_number=4):
 
 
 def get_allStudentColors():
-
+    
+    #your loop here
     example_color = 1
     students_array = []
-    #your loop here
+    for i in range(10):
+        random_color = random.randrange(0,4)
+        color = get_color(random_color)
+        students_array.append(color)
+    return students_array
+
+print(get_allStudentColors())
+
+        
 
 
 
